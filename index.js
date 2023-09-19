@@ -10,8 +10,8 @@ const special = '!@#$%^&*';
 
 const alphabet = latin + number + special;
 
-const fontSize = 16;
-const columns = canvas.width/fontSize;
+const fontSize = canvas.width/60;
+const columns = 60;
 
 const raindrop = [];
 
@@ -21,6 +21,7 @@ for(let x = 0; x < columns; x++)
 }
 
 const draw = () => {
+
     context.fillStyle = 'rgba(0,0,0,0.04)';
     context.fillRect(0,0,canvas.width, canvas.height);
     
@@ -32,7 +33,7 @@ const draw = () => {
         const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
         context.fillText(text, i*fontSize, raindrop[i]*fontSize);
 
-        if(raindrop[i]*fontSize > canvas.height && Math.random() > 0.975)
+        if(raindrop[i]*fontSize > canvas.height && Math.random() > 0.98)
         {
             raindrop[i] = 0;
         }
@@ -41,3 +42,5 @@ const draw = () => {
 };
 
 setInterval(draw, 30);
+
+window.onresize = function(){ location.reload(); }
