@@ -41,9 +41,14 @@ const draw = () => {
     }
 };
 
-setInterval(draw, 35);
+setInterval(draw, 36);
 
-/*window.onresize = function(){ location.reload(); }*/
+window.onresize = function(){ 
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight; 
+    fontSize = canvas.width/60;
+    columns = 60;
+}
 
 
 
