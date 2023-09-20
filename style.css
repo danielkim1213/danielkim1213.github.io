@@ -6,21 +6,100 @@ html {
 canvas {
     position:absolute;
     z-index: -1;
-    top: 0;
     opacity: 0.25;
 }
 
 body
 {
+    color: white;
     opacity: 1;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     text-align: center;
     color: white;
-    text-shadow: -0.2px 0 #0f0, 0 0.2px #0f0, 0.2px 0 #0f0, 0 -0.2px #0f0;
     font-family: 'Source Code Pro', monospace;
-
 }
 
 
+#text-container {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #007BFF;
+    color: white;
+}
+
+.btn,
+.shadow {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative;
+  background: #EAC118;
+  padding: 0 25px;
+  text-decoration: none;
+  line-height: 42px;
+  text-transform: uppercase;
+  font-family: Arial;
+  color: #ffffff;
+}
+
+.btn::after,
+.shadow:after,
+.shadow:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-style: solid;
+  border-width: 21px 0px 21px 20px;
+  border-color: transparent transparent transparent #EAC118;
+}
+
+.shadow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: #2ecbff;
+}
+
+.shadow::after {
+  border-color: #000 #000 #000 #2ecbff;
+  left: calc(100% - 3px);
+  z-index: 1;
+}
+
+.shadow::before {
+  border-color: transparent transparent transparent #2ecbff;
+  bottom: 5px;
+  z-index: 2;
+}
+
+.shadow > span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-top: 5px solid #000;
+  background: #2ecbff;
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  z-index: 3;
+}
+
+.btn
+{
+    cursor: pointer;
+}
