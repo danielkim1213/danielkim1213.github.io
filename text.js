@@ -18,12 +18,13 @@ function typeText() {
         }
         currentIndex++;
     } else {
-        typeButton.disabled = false; // Enable the button when animation is complete
+        typeButton.disabled = false; 
     }
 }
 
 if (typeButton && textContainer) {
     typeButton.addEventListener("click", () => {
+        typeButton.disabled = true; 
         typeText();
         typeButton.parentNode.removeChild(typeButton);
     });
