@@ -23,6 +23,9 @@ h1 {
     font-family: 'Source Code Pro', monospace;
 }
 
+.link{
+    color:rgb(8, 168, 254);
+}
 
 #text-container {
     font-family: 'Source Code Pro', monospace;
