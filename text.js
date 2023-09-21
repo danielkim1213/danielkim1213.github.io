@@ -1,4 +1,4 @@
-const text = "Name: Yewan Kim\n"
+const introText = "Name: Yewan Kim\n"
             + "Preferred Name: Daniel\n"
             + "Gender: Male\n"
             + "Age: 18\n"
@@ -18,28 +18,28 @@ const text = "Name: Yewan Kim\n"
 
 const textContainer = document.getElementById("text-container");
 const typeButton = document.getElementById("type-button");
-let currentIndex = 0;
+let introIndex = 0;
 
 
 
-function typeText() {
-    if (currentIndex < text.length) {
+function typeIntro() {
+    if (introIndex < introText.length) {
         textContainer.innerHTML = textContainer.innerHTML.substring(0,textContainer.innerHTML.length-1);
-        textContainer.innerHTML += text.charAt(currentIndex);
-        if(text.charAt(currentIndex) == " ")
+        textContainer.innerHTML += introText.charAt(introIndex);
+        if(introText.charAt(introIndex) == " ")
         {
-            setTimeout(typeText, 50);
+            setTimeout(typeIntro, 50);
         }
-        else if(text.charAt(currentIndex) == "\n")
+        else if(introText.charAt(introIndex) == "\n")
         {
-            setTimeout(typeText, 300);
+            setTimeout(typeIntro, 300);
             textContainer.innerHTML += ("<br>");
         }
         else
         {
-            setTimeout(typeText, 40);
+            setTimeout(typeIntro, 40);
         }
-        currentIndex++;
+        introIndex++;
         textContainer.innerHTML += "|";
     } else {
         typeButton.disabled = false; 
@@ -51,7 +51,7 @@ function typeText() {
 if (typeButton && textContainer) {
     typeButton.addEventListener("click", () => {
         typeButton.disabled = true; 
-        typeText();
+        typeIntro();
         typeButton.parentNode.removeChild(typeButton);
     });
 } else {

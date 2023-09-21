@@ -1,34 +1,29 @@
-const text = "Check my profile at:\n- GitHub\n- LinkedIn\n"
-            + "For contact, please email to kyw4091@gmail.com or kim506@mcmaster.ca"
-            + "For urgent contact, please call me at (519)-731-8398.";
+const contactText = "Check my profile at:\n- GitHub\n- LinkedIn\n\n"
+            + "For contact, please email to kyw4091@gmail.com or kim506@mcmaster.ca\n"
+            + "For urgent contact, please call me at (519)-731-8398.\n";
 
 const contactContainer = document.getElementById("contact-container");
 const contactButton = document.getElementById("contact-button");
-let currentIndex = 0;
+let contactIndex = 0;
 
-function typeText() {
-    if (currentIndex < text.length) {
+function typeContact() {
+    if (contactIndex < contactText.length) {
         contactContainer.innerHTML = contactContainer.innerHTML.substring(0,contactContainer.innerHTML.length-1);
-        contactContainer.innerHTML += text.charAt(currentIndex);
-        if(text.charAt(currentIndex) == " ")
+        contactContainer.innerHTML += contactText.charAt(contactIndex);
+        if(contactText.charAt(contactIndex) == " ")
         {
-            setTimeout(typeText, 50);
+            setTimeout(typeContact, 50);
         }
-        else if(text.charAt(currentIndex) == "\n")
+        else if(contactText.charAt(contactIndex) == "\n")
         {
-            setTimeout(typeText, 300);
-            contactContainer.innerHTML += ("<br>");
-        }
-        else if(text.charAt(currentIndex) == "GitHub")
-        {
-            setTimeout(typeText, 300);
+            setTimeout(typeContact, 300);
             contactContainer.innerHTML += ("<br>");
         }
         else
         {
-            setTimeout(typeText, 40);
+            setTimeout(typeContact, 40);
         }
-        currentIndex++;
+        contactIndex++;
         contactContainer.innerHTML += "|";
     } else {
         contactButton.disabled = false; 
@@ -40,7 +35,7 @@ function typeText() {
 if (contactButton && contactContainer) {
     contactButton.addEventListener("click", () => {
         contactButton.disabled = true; 
-        typeText();
+        typeContact();
         contactButton.parentNode.removeChild(contactButton);
     });
 } else {
