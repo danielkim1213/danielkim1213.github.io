@@ -1,6 +1,6 @@
 const contactText = "Check my profile at:\n- GitHub\n- LinkedIn\n\n"
-            + "For contact, please email to kyw4091@gmail.com or kim506@mcmaster.ca\n"
-            + "For urgent contact, please call me at (519)-731-8398.\n";
+            + "Email: \n- kyw4091@gmail.com\n- kim506@mcmaster.ca\n\n"
+            + "Call me at (519)-731-8398.\n";
 
 const contactContainer = document.getElementById("contact-container");
 const contactButton = document.getElementById("contact-button");
