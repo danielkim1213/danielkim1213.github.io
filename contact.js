@@ -41,6 +41,17 @@ function typeContact() {
             contactContainer.appendChild(linkedin);
             setTimeout(typeContact, 300);
         }
+        else if(contactText.substring(contactIndex-16,contactIndex+1) == "kyw4091@gmail.com")
+        {
+            contactContainer.innerHTML = contactContainer.innerHTML.substring(0,contactContainer.innerHTML.length-17);
+            const personalemail = document.createElement('a');
+            personalemail.href = "https://mail.google.com/mail/?view=cm&fs=1&to=kyw4091@gmail.com"; 
+            personalemail.textContent = "kyw4091@gmail.com";
+            personalemail.target = "_blank";
+            personalemail.style.color = "rgb(8, 168, 254)"
+            contactContainer.appendChild(personalemail);
+            setTimeout(typeContact, 300);
+        }
         else if(contactText.substring(contactIndex-13,contactIndex+1) == "(519)-731-8398")
         {
             contactContainer.innerHTML = contactContainer.innerHTML.substring(0,contactContainer.innerHTML.length-14);
