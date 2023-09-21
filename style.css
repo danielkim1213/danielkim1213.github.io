@@ -19,17 +19,28 @@ body
 
 h1 {
     text-align: center;
-    color: white;
+    color: rgb(47, 45, 45);
+    font-size: 50px;
     font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.01px #22d5a8;
+    margin: 0;
+    padding: 25px;
 }
 
 .link{
     color:rgb(8, 168, 254);
 }
 
+h2 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Source Code Pro', monospace;
+}
+
 #text-container {
     font-family: 'Source Code Pro', monospace;
-    font-size: 15px;
+    font-size: 17px;
     white-space: nowrap;
     overflow: hidden;
     color: white;
@@ -37,7 +48,7 @@ h1 {
 
 #contact-container {
   font-family: 'Source Code Pro', monospace;
-  font-size: 15px;
+  font-size: 17px;
   white-space: nowrap;
   overflow: hidden;
   color: white;

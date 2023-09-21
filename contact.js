@@ -52,6 +52,17 @@ function typeContact() {
             contactContainer.appendChild(personalemail);
             setTimeout(typeContact, 200);
         }
+        else if(contactText.substring(contactIndex-17,contactIndex+1) == "kim506@mcmaster.ca")
+        {
+            contactContainer.innerHTML = contactContainer.innerHTML.substring(0,contactContainer.innerHTML.length-18);
+            const schoolemail = document.createElement('a');
+            schoolemail.href = "mailto:kim506@mcmaster.ca"; 
+            schoolemail.textContent = "kim506@mcmaster.ca";
+            schoolemail.target = "_blank";
+            schoolemail.style.color = "rgb(8, 168, 254)"
+            contactContainer.appendChild(schoolemail);
+            setTimeout(typeContact, 200);
+        }
         else if(contactText.substring(contactIndex-13,contactIndex+1) == "(519)-731-8398")
         {
             contactContainer.innerHTML = contactContainer.innerHTML.substring(0,contactContainer.innerHTML.length-14);
