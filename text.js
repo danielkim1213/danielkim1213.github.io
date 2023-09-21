@@ -11,7 +11,10 @@ const introText = "Name: Yewan Kim\n"
             + "- JavaScript\n"
             + "- C#\n"
             + "- C\n"
+            + "- Matlab\n"
             + "- SAP ABAP\n"
+            + "- Haskell\n"
+            + "- Elm\n"
             + "- Video Editing\n"
 
 
