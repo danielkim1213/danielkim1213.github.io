@@ -50,7 +50,7 @@ function typeContact() {
             personalemail.target = "_blank";
             personalemail.style.color = "rgb(8, 168, 254)"
             contactContainer.appendChild(personalemail);
-            setTimeout(typeContact, 300);
+            setTimeout(typeContact, 200);
         }
         else if(contactText.substring(contactIndex-13,contactIndex+1) == "(519)-731-8398")
         {
