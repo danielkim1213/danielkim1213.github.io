@@ -15,7 +15,8 @@ const introText = "Name: Yewan Kim\n"
             + "- SAP ABAP\n"
             + "- Haskell\n"
             + "- Elm\n"
-            + "- Video Editing\n"
+            + "- Video Editing\n\n"
+            + "Download my resume\n\n"
 
 
 
@@ -37,6 +38,17 @@ function typeIntro() {
         {
             setTimeout(typeIntro, 300);
             textContainer.innerHTML += ("<br>");
+        }
+        else if(introText.substring(introIndex-17,introIndex+1) == "Download my resume")
+        {
+            textContainer.innerHTML = textContainer.innerHTML.substring(0,textContainer.innerHTML.length-18);
+            const resume = document.createElement('a');
+            resume.href = "./resume (2).pdf"; 
+            resume.textContent = "Download my resume";
+            resume.target = "_blank";
+            resume.style.color = "rgb(8, 168, 254)"
+            textContainer.appendChild(resume);
+            setTimeout(typeIntro, 300);
         }
         else
         {
