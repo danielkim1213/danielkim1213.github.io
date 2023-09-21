@@ -10,7 +10,7 @@ const special = '!@#$%^&*';
 
 const alphabet = latin + number + special;
 
-const fontSize = canvas.width/60;
+var fontSize = canvas.width/60;
 const columns = 60;
 
 const raindrop = [];
@@ -24,6 +24,8 @@ const draw = () => {
 
     context.fillStyle = 'rgba(0,0,0,0.05)';
     context.fillRect(0,0,canvas.width, canvas.height);
+
+    fontSize = canvas.width/60;
     
     context.fillStyle = '#0F0';
     context.font = fontSize + 'px monospace';
@@ -46,8 +48,6 @@ setInterval(draw, 36);
 window.onresize = function(){ 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight; 
-    fontSize = canvas.width/60;
-    columns = 60;
 }
 
 
