@@ -19,6 +19,39 @@ function typeContact() {
             setTimeout(typeContact, 300);
             contactContainer.innerHTML += ("<br>");
         }
+        else if(contactText.substring(contactIndex-5,contactIndex+1) == "GitHub")
+        {
+            contactContainer.innerHTML = contactContainer.innerHTML.substring(0,contactContainer.innerHTML.length-6);
+            const github = document.createElement('a');
+            github.href = "https://github.com/danielkim1213"; 
+            github.textContent = "GitHub";
+            github.target = "_blank";
+            github.style.color = "rgb(8, 168, 254)"
+            contactContainer.appendChild(github);
+            setTimeout(typeContact, 300);
+        }        
+        else if(contactText.substring(contactIndex-7,contactIndex+1) == "LinkedIn")
+        {
+            contactContainer.innerHTML = contactContainer.innerHTML.substring(0,contactContainer.innerHTML.length-8);
+            const linkedin = document.createElement('a');
+            linkedin.href = "https://www.linkedin.com/in/kim-yewan-9046a7218/"; 
+            linkedin.textContent = "LinkedIn";
+            linkedin.target = "_blank";
+            linkedin.style.color = "rgb(8, 168, 254)"
+            contactContainer.appendChild(linkedin);
+            setTimeout(typeContact, 300);
+        }
+        else if(contactText.substring(contactIndex-13,contactIndex+1) == "(519)-731-8398")
+        {
+            contactContainer.innerHTML = contactContainer.innerHTML.substring(0,contactContainer.innerHTML.length-14);
+            const phoneNumber = document.createElement('a');
+            phoneNumber.href = "tel:5197318398"; 
+            phoneNumber.textContent = "(519)-731-8398";
+            phoneNumber.target = "_blank";
+            phoneNumber.style.color = "rgb(8, 168, 254)"
+            contactContainer.appendChild(phoneNumber);
+            setTimeout(typeContact, 300);
+        }
         else
         {
             setTimeout(typeContact, 40);
