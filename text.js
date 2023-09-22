@@ -14,8 +14,7 @@ const introText = "Name: Yewan Kim\n"
             + "- Matlab\n"
             + "- SAP ABAP\n"
             + "- Haskell\n"
-            + "- Elm\n"
-            + "- Video Editing\n\n"
+            + "- Elm\n\n"
             + "Download my resume\n\n"
 
 
