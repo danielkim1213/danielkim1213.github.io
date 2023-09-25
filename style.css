@@ -6,7 +6,7 @@ html {
 canvas {
     position:absolute;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.35;
 }
 
 body
@@ -34,22 +34,20 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Source Code Pro', monospace;
 }
 
 main {
-  display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
-fieldset {
+fieldset{
   width: 90%;
   margin: auto;
   white-space: nowrap;
   margin-bottom: 40px;
-  background-color: #00000062;
+  background-color: #00000050;
 }
 
 legend {
@@ -65,12 +63,12 @@ legend {
 }
 
 .about-me{
-  width: 60%; 
+  width: 50%; 
   padding: 5px;
 }
 
 .contact-info{
-  width: 40%; 
+  width: 50%; 
   padding: 5px;
 }
 
