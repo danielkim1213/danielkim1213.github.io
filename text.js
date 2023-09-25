@@ -2,7 +2,8 @@ const introText = "Name: Yewan Kim\n"
             + "Preferred Name: Daniel\n"
             + "Gender: Male\n"
             + "Age: 18\n"
-            + "Academic career: Computer Science @ McMaster University\n"
+            + "University: McMaster\n"
+            + "Major: Computer Science\n"
             + "Year of Study: 2\n\n"
             + "Skills: \n"
             + "- Java\n"
@@ -15,7 +16,7 @@ const introText = "Name: Yewan Kim\n"
             + "- SAP ABAP\n"
             + "- Haskell\n"
             + "- Elm\n\n"
-            + "Download my resume\n\n"
+            + "Download my resume\n"
 
 
 
@@ -31,7 +32,7 @@ function typeIntro() {
         textContainer.innerHTML += introText.charAt(introIndex);
         if(introText.charAt(introIndex) == " ")
         {
-            setTimeout(typeIntro, 50);
+            setTimeout(typeIntro, 45);
         }
         else if(introText.charAt(introIndex) == "\n")
         {
@@ -51,7 +52,7 @@ function typeIntro() {
         }
         else
         {
-            setTimeout(typeIntro, 40);
+            setTimeout(typeIntro, 35);
         }
         introIndex++;
         textContainer.innerHTML += "|";

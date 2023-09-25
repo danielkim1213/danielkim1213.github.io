@@ -44,10 +44,34 @@ main {
   align-items: flex-start;
 }
 
-.about-me,
-.contact-info {
-  flex: 1;
-  padding: 20px;
+fieldset {
+  width: 90%;
+  margin: auto;
+  white-space: nowrap;
+  margin-bottom: 40px;
+  background-color: #00000062;
+}
+
+legend {
+  color: white;
+  font-size: 30px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+}
+
+.about-me, .contact-info {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about-me{
+  width: 60%; 
+  padding: 5px;
+}
+
+.contact-info{
+  width: 40%; 
+  padding: 5px;
 }
 
 
