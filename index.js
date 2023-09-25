@@ -47,7 +47,8 @@ setInterval(draw, 36);
 
 window.onresize = function(){ 
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight*2; 
+    canvas.height = window.innerHeight; 
+    
     if (canvas.width > 4000 || canvas. width < 700)
     {
         alert("I don't recommend view this website in this resolution!");
