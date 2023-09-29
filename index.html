@@ -14,9 +14,20 @@
 </head>
 
 <body>
-    <h1>Welcome to my website!</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="#about-me-fieldset">About Me</a>
+            </li>
+            <li>
+                <a href="#my-projects-fieldset">My Projects</a>
+            </li>
+        </ul>
+    </nav>
+    
     <main>
-        <fieldset >
+        <h1>Welcome to my website!</h1>
+        <fieldset id = "about-me-fieldset">
             <legend> About Me </legend>
             <div class="about-me">
                 <h2>Info</h2>
@@ -42,7 +53,7 @@
         <p>
             <br>
         </p>
-        <fieldset>
+        <fieldset id="my-projects-fieldset">
             <legend> My projects </legend>
             <br>
             <iframe width="640" height="360" src="https://www.youtube.com/embed/SZShsA13kK0?rel=0&enablejsapi=1" title="Hackathon - Digital Health Data" frameborder="0" ></iframe>
@@ -53,4 +64,8 @@
 
 
 </body>
+
+<footer>
+    <script src = "./scroller.js"></script>
+</footer>
 </html>

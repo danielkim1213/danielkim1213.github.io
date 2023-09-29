@@ -56,4 +56,17 @@ window.onresize = function(){
 }
 
 
+document.querySelectorAll('fieldset').forEach(fieldset => {
+    fieldset.addEventListener('click', function() {
+      const targetId = this.getAttribute('id');
+      const targetSection = document.getElementById(targetId);
+  
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: 'smooth' // Smooth scroll behavior
+        });
+      }
+    });
+  });
 

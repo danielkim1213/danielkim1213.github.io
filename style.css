@@ -5,6 +5,7 @@ html {
 
 canvas {
     position:absolute;
+    width: 100%;
     z-index: -1;
     opacity: 0.35;
     margin: 0;
@@ -41,6 +42,7 @@ h2 {
 
 main {
   justify-content: space-between;
+  padding-top: 4rem;
 }
 
 fieldset{
@@ -49,14 +51,16 @@ fieldset{
   white-space: nowrap;
   margin-bottom: 40px;
   background-color: #00000050;
+  border-color: #ffffffb4;
 }
 
 legend {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 30px;
   font-family: 'Source Code Pro', monospace;
   font-weight: bold;
 }
+
 
 .about-me, .contact-info {
   display: inline-block;
@@ -73,13 +77,37 @@ legend {
   padding: 5px;
 }
 
+nav {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #ffffffb1;
+  background-color: #000;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+ul a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 
 #text-container {
     font-family: 'Source Code Pro', monospace;
     font-size: 17px;
     white-space: nowrap;
-    overflow: hidden;
     color: white;
 }
 
@@ -87,7 +115,6 @@ legend {
   font-family: 'Source Code Pro', monospace;
   font-size: 17px;
   white-space: nowrap;
-  overflow: hidden;
   color: white;
 }
 
@@ -115,7 +142,7 @@ legend {
   position: absolute;
   bottom: 0;
   left: 100%;
-  width: 0;
+  width: 0; 
   height: 0;
   z-index: 1;
   border-style: solid;
