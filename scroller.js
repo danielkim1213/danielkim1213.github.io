@@ -6,8 +6,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetFieldset = document.getElementById(targetId);
 
     if (targetFieldset) {
-      window.scrollTo({
-        top: targetFieldset.offsetTop,
+      window.scroll({
+        top: targetFieldset.offsetTop - 50,
         behavior: 'smooth' 
       });
     }

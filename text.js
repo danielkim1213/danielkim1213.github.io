@@ -60,8 +60,6 @@ function typeIntro() {
         typeButton.disabled = false; 
         textContainer.innerHTML = textContainer.innerHTML.substring(0,textContainer.innerHTML.length-1);
         textContainer.innerHTML += "<br>";
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight*2; 
     }
 }
 

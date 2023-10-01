@@ -2,7 +2,7 @@ const canvas = document.getElementById('Matrix');
 const context = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = document.documentElement.scrollHeight;
 
 const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const number = '1234567890';
@@ -47,7 +47,7 @@ setInterval(draw, 36);
 
 window.onresize = function(){ 
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight; 
+    canvas.height = document.documentElement.scrollHeight; 
     
     if (canvas.width > 4000 || canvas. width < 700)
     {
