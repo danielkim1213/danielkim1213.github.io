@@ -96,3 +96,4 @@ if (contactButton && contactContainer) {
 } else {
     console.error("Button or contact container not found in the DOM.");
 }
+
